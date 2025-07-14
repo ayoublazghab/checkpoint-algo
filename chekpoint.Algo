@@ -1,0 +1,19 @@
+ALGORITHM sentance
+VAR
+    str:STRING;
+    i,words,voy:INTEGER
+BEGIN
+    write("enter une phrase")
+    read(str)
+    FOR i FROM 0 TO str.length_1 DO 
+    IF (str(i)=" " or str (i)=".") THEN
+    words:=words+1
+    END_IF
+    IF (str(i) in ("a","e","i","o","u","y")) THEN
+    voy:=voy+1
+    END_IF
+    END_FOR
+    write(str.length)
+    write(words)
+    write(voy)
+END
